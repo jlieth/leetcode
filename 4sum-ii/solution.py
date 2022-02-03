@@ -34,6 +34,5 @@ class Solution:
             for l in nums4:
                 sum_ = k + l
                 result += hashmap.get(-sum_, 0)
-        
-        return result
 
+        return result
