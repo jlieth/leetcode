@@ -8,6 +8,7 @@ Memory Usage: 113.4 MB, less than 10.05% of Python3 online submissions for Find 
 from collections import Counter
 from typing import List
 
+
 class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:
         length = len(p)

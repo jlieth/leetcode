@@ -8,6 +8,7 @@ Memory Usage: 15.1 MB, less than 77.41% of Python3 online submissions for Find A
 from collections import Counter
 from typing import List
 
+
 class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:
         length = len(p)
@@ -23,7 +24,7 @@ class Solution:
                 skipnext = False
                 continue
             substring = s[i : i + length]
-            
+
             if Counter(substring) == char_freq:
                 result.append(i)
                 added = True
