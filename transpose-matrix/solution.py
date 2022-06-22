@@ -11,8 +11,5 @@ class Solution:
     def transpose(self, matrix: List[List[int]]) -> List[List[int]]:
         m = len(matrix)
         n = len(matrix[0])
-            
-        return [
-            [matrix[row][col] for row in range(m)] for col in range(n)
-        ]
 
+        return [[matrix[row][col] for row in range(m)] for col in range(n)]
