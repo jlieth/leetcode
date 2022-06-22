@@ -27,4 +27,3 @@ class NumMatrix:
             else:
                 sum_ += self.matrix[row][col2] - self.matrix[row][col1 - 1]
         return sum_
-
