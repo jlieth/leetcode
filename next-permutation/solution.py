@@ -27,7 +27,10 @@ class Solution:
             # if a digit was found, swap and break
             if smallest_larger_idx is not None:
                 swap_idx = idx1
-                nums[idx1], nums[smallest_larger_idx] = nums[smallest_larger_idx], nums[idx1]
+                nums[idx1], nums[smallest_larger_idx] = (
+                    nums[smallest_larger_idx],
+                    nums[idx1],
+                )
                 break
 
         # if a swap was made, do a stupid sort (bubble) of the rest of the array
